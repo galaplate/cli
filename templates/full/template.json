@@ -1,0 +1,54 @@
+{
+  "name": "full",
+  "description": "Full-stack application template with frontend capabilities",
+  "version": "1.0.0",
+  "features": [
+    "HTTP server with Fiber",
+    "HTML template engine",
+    "Static file serving",
+    "Database integration (PostgreSQL/MySQL)",
+    "JWT authentication middleware",
+    "Request validation",
+    "Background job queue",
+    "Console commands",
+    "Structured logging",
+    "Environment configuration",
+    "Frontend asset pipeline"
+  ],
+  "dependencies": {
+    "galaplate-core": "^0.1.0"
+  },
+  "structure": {
+    "include": [
+      "main.go",
+      "bootstrap/",
+      "controllers/",
+      "middleware/",
+      "models/",
+      "router/",
+      "templates/",
+      "static/",
+      "docs/",
+      ".env.example",
+      "go.mod.template",
+      "README.md.template",
+      "Makefile"
+    ],
+    "exclude": []
+  },
+  "replacements": {
+    "{{PROJECT_NAME}}": "project name placeholder",
+    "{{MODULE_NAME}}": "Go module name",
+    "{{DB_TYPE}}": "database type (postgres/mysql)",
+    "{{GALAPLATE_CORE_VERSION}}": "galaplate-core version"
+  },
+  "setup_steps": [
+    "Initialize Go module",
+    "Install dependencies",
+    "Copy environment file",
+    "Generate application secret",
+    "Initialize git repository",
+    "Run initial migration",
+    "Build frontend assets"
+  ]
+}

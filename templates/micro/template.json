@@ -1,0 +1,59 @@
+{
+  "name": "micro",
+  "description": "Microservice template - minimal, containerized service",
+  "version": "1.0.0",
+  "features": [
+    "HTTP server with Fiber",
+    "Health check endpoints",
+    "Metrics and monitoring",
+    "Database integration (PostgreSQL/MySQL)",
+    "Request validation",
+    "Structured logging",
+    "Environment configuration",
+    "Docker support",
+    "Kubernetes manifests"
+  ],
+  "dependencies": {
+    "galaplate-core": "^0.1.0"
+  },
+  "structure": {
+    "include": [
+      "main.go",
+      "bootstrap/",
+      "controllers/",
+      "middleware/",
+      "models/",
+      "router/",
+      "docs/",
+      "deployments/",
+      "Dockerfile",
+      ".dockerignore",
+      ".env.example",
+      "go.mod.template",
+      "README.md.template",
+      "Makefile"
+    ],
+    "exclude": [
+      "templates/",
+      "static/",
+      "pkg/queue/",
+      "pkg/scheduler/"
+    ]
+  },
+  "replacements": {
+    "{{PROJECT_NAME}}": "project name placeholder",
+    "{{MODULE_NAME}}": "Go module name",
+    "{{DB_TYPE}}": "database type (postgres/mysql)",
+    "{{GALAPLATE_CORE_VERSION}}": "galaplate-core version",
+    "{{SERVICE_NAME}}": "service name for containers"
+  },
+  "setup_steps": [
+    "Initialize Go module",
+    "Install dependencies",
+    "Copy environment file",
+    "Generate application secret",
+    "Initialize git repository",
+    "Run initial migration",
+    "Build Docker image"
+  ]
+}
