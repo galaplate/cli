@@ -54,9 +54,11 @@ galaplate new my-project --module=github.com/myuser/my-project
 
 ### Available Templates
 
-- **api** (default): REST API with database integration
-- **full**: Full-stack application with frontend components
-- **micro**: Lightweight microservice template
+- **api** (default): REST API with database integration ✅ **Ready**
+- **full**: Full-stack application with frontend components ⚠️ **Coming Soon**
+- **micro**: Lightweight microservice template ⚠️ **Coming Soon**
+
+> **Note**: Currently only the `api` template is fully implemented. The `full` and `micro` templates are planned for future releases.
 
 ### Available Commands
 
@@ -113,6 +115,30 @@ The project uses GitHub Actions for automated releases:
 - **Triggers**: On tag push (v*)
 - **Platforms**: Linux, macOS, Windows (amd64/arm64)
 - **Artifacts**: Cross-compiled binaries uploaded to GitHub releases
+
+## Roadmap
+
+### v0.1.0
+- [x] Core CLI infrastructure
+- [x] API template with database integration
+- [x] Cross-platform releases
+- [x] Installation script
+
+### v0.2.0 (Planned)
+- [ ] Full-stack template with frontend components
+- [ ] Microservice template
+- [ ] Template customization options
+- [ ] Interactive project setup
+
+### v0.3.0 (Planned)
+- [ ] Custom template support
+- [ ] Plugin system
+- [ ] Docker integration
+- [ ] Advanced code generators
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
