@@ -11,7 +11,7 @@ NC='\033[0m' # No Color
 
 # GitHub repository details
 REPO_OWNER="galaplate"
-REPO_NAME="galaplate"
+REPO_NAME="cli"
 BINARY_NAME="galaplate"
 
 # Default installation directory
